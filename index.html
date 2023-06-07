@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link shortening</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8da159c09c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="top">
+            <div class="logo">
+                <img class="logo-image" src="./images/logo.svg" alt="Logo">
+            </div>
+            <input type="checkbox" id="sidebar">
+            <label class="menu-btn" for="sidebar"><i class="fa-solid fa-bars fa-2xl"></i></label>
+            <div class="navigation-bar">
+                <div class="navigation-top">
+                    <h4>Features</h4>
+                    <h4>Pricing</h4>
+                    <h4>Resources</h4>
+                </div>
+                <div class="navigation-bottom">
+                    <h4>Login</h4>
+                    <h4>Sign Up</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="center-1">
+            <div class="center-1-right">
+                <img src="./images/illustration-working.svg" alt="Working-illustration">
+            </div>
+            <div class="center-1-left">
+                <h1>More than just shorter links</h1>
+                <p>Build your brand’s recognition and get detailed insights on how your links are performing.</p>
+                <button>Get Started</button>
+            </div>
+        </div>
+
+        <div class="center-2">
+            <div class="bg"></div>
+            <div class="center-2-top">
+                <img class="link-box-bgimage" src="./images/bg-shorten-mobile.svg" alt="Just a background painting">
+                <div class="link-and-button">
+                    <form id="myLink" onsubmit="validateForm(event)">
+                        <textarea id="text-area" name="message" rows="1" cols="40">Shorten a link here...</textarea>
+                        <input id="short-btn" type="submit" value="Shorten it!">
+                        <p class="error" id="error-message"></p>
+                    </form>
+                </div>
+            </div>
+            <div class="center-2-bottom" id="center-2-bottom">
+                <div id="box0" class="box hidden">
+                    <p class="default-link">Default link</p>
+                    <div class="box-right">
+                        <p class="short-link" id="short-link0">Shortened link</p>
+                        <button class="unik" onclick="copyText('unik','short-link','copy-btn')">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="center-3">
+            <div class="bg"></div>
+            <div class="center-3-top">
+                <h2>Advanced Statistics</h2>
+                <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
+            </div>
+            <div class="center-3-bottom">
+                <div class="ppt property-1">
+                    <div class="ppt-img">
+                        <img src="./images/icon-brand-recognition.svg" alt="Brand recognition">
+                    </div>
+                    <h3>Brand Recognition</h3>
+                    <p>Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
+                </div>
+                <div class="ppt property-2">
+                    <div class="ppt-img">
+                        <div class="line"></div>
+                        <img src="./images/icon-detailed-records.svg" alt="Detailed records">
+                    </div>
+                    <h3>Detailed Records</h3>
+                    <p>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+                </div>
+                <div class="ppt property-3">                   
+                    <div class="ppt-img">
+                        <div class="line"></div>
+                        <img src="./images/icon-fully-customizable.svg" alt="Fully Customizable">
+                    </div>
+                    <h3>Fully Customizable</h3>
+                    <p>Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-1">
+                <img class="footer-1-bgimage" src="./images/bg-boost-mobile.svg" alt="Background painting">
+                <div class="footer-1-text">
+                    <h3>Boost your links today</h3>
+                    <button>Get Started</button>
+                </div>
+            </div>
+
+            <div class="footer-2">
+                <div class="footer-logo">
+                    <img class="logo-image" src="./images/Mediamodifier-Design.svg" alt="Logo">
+                </div>
+                <div class="footer-2-right">
+                    <div class="features">
+                        <h4>Features</h4>
+                        <ul>
+                            <li>Link Shortening</li>
+                            <li>Branded Links</li>
+                            <li>Analytics</li>
+                        </ul>
+                    </div>
+                    <div class="resources">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li>Blog</li>
+                            <li>Developers</li>
+                            <li>Support</li>
+                        </ul>
+                    </div>
+                    <div class="company">
+                        <h4>Company</h4>
+                        <ul>
+                            <li>About</li>
+                            <li>Our Team</li>
+                            <li>Careers</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <i class="fa-brands fa-square-facebook fa-xl"></i>
+                    <i class="fa-brands fa-square-twitter fa-xl"></i>
+                    <i class="fa-brands fa-square-pinterest fa-xl"></i>
+                    <i class="fa-brands fa-square-instagram fa-xl"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,368 @@
+html {
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.container {
+    /* position: absolute; */
+    width: 100%;
+    padding-right: 15px;
+}
+.top {
+    position:fixed;
+    top: 0px;
+    background-color: white;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    z-index: 100;
+}
+
+.navigation-bar {
+    background-color: #3b3054;
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    color: #bfbfbf;
+    text-align: center;
+    border-radius: 5px;
+
+    position: fixed;
+    top: 80px;
+    left: -3000px;
+    margin: 20px;
+    
+}
+
+.navigation-bottom {
+    border-top: 1px solid #bfbfbf;
+}
+
+#sidebar {
+    display: none;
+}
+
+.menu-btn {
+    position: absolute;
+    right: 30px;
+    opacity: 0.6;
+    top: 60px;
+}
+
+#sidebar:checked ~ .navigation-bar {
+    left: 0px;
+}
+
+.center-1 {
+    margin-top: 110px;
+}
+
+.center-1-right {
+    overflow: hidden;
+    width: 100%;
+    height: 50vh;
+}
+
+.center-1-right img {
+    height: 100%;
+}
+
+.center-1-left {
+    color: #232127;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.center-1-left p {
+    font-size: 1.05rem;
+    color: #bfbfbf;
+}
+
+.center-1-left h1{
+    color: #35323e;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.center-1-left button {
+    color: white;
+    background-color: #2acfcf;
+    border: none;
+    padding: 15px;
+    width: 250px;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.center-2-top {
+    background-color: #3b3054;
+    position: relative;
+    height: 130px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.link-box-bgimage {
+    position: absolute;
+    right: 0px;
+    height: 80%;
+    width: 70%;
+    border-radius: 5px;
+}
+
+.link-and-button {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding-right: 20px;
+}
+
+#text-area {
+    height: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: baseline;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 100%;
+    color: #9e9aa7;
+    resize: none;
+    /* outline: none; */
+}
+
+
+#short-btn {
+    height: 40px;
+    width: 100%;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #2acfcf;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border: none;
+}
+
+ #error-message {
+    position: absolute;
+    top: 40px;
+    font-size: 0.7rem;
+    color: #f46262;
+    font-style: italic;
+    font-weight: lighter;
+    opacity: 0.7;
+}
+
+.box {
+    padding: 10px 20px;
+    border: 2px solid black;
+    margin-top: 20px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.box-right {
+    border-top: 1px solid black;
+    margin-top: 2px;
+}
+
+
+.box-right button {
+    border-radius: 5px;
+    background-color: #2acfcf;
+    color: white;
+    font-weight: 700;
+    width: 90%;
+    height: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: none;
+    font-size: 1rem;
+}
+
+.box-right p {
+    color: #2acfcf;
+    font-size: 1rem;
+    margin: 10px 0px;
+}
+
+.box > p {
+    font-size: 1rem;
+    margin: 10px 0px;
+}
+
+.hidden {
+    display:none;
+}
+
+
+.center-3-top {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+
+.center-3-top p {
+    color: #9e9aa7;
+    font-size: 0.95rem;
+}
+
+.center-3-bottom {
+    padding-bottom: 20px;
+}
+
+.ppt {
+    text-align: center;
+    padding: 20px;
+    background-color:#f1ebf2 ;
+    position: relative;
+    margin-bottom: 75px;
+    padding-top: 0px;
+}
+
+.ppt-img .line {
+    position: absolute;
+    width: 10px;
+    height: 50px;
+    background-color: #2acfcf;
+    left: 50%;
+    top: -50px;
+    transform: translate(-50%, -0%);
+    z-index: -1;
+}
+
+.ppt h3 {
+    color: #3b3054;
+}
+
+.ppt p {
+    color: #4a4961;
+}
+
+.ppt-img {
+    position: relative;
+    top: -35px;
+    left: 40%;
+    background-color: #3b3054;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.ppt-img img {
+    display: block;
+}
+
+.footer {
+    position: relative;
+}
+
+.footer-1 {
+    background-color: #3b3054;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    position: relative;
+}
+
+.footer-1-text {
+    text-align: center;
+    color: white;
+    position: absolute;
+}
+
+.footer-1-text button {
+    background-color: #2acfcf;
+    padding: 10px;
+    width: 200px;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1rem;
+    height: 50px;
+}
+
+.footer-1 img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+}
+
+.footer-2 {
+    text-align: center;
+    background-color: #232127;
+    color: white;
+    padding: 0px 20px;
+    padding-bottom: 50px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px 20px;
+    margin-bottom: 40px;
+}
+
+li {
+    color: #bfbfbf;
+}
+
+.footer-logo {
+    height: 100px;
+}
+
+.social-media i {
+    margin: 0px 10px;
+}
+
+.center-2 {
+    position: relative;
+}
+
+.navigation-bar h4:hover {
+    background-color: #2acfcf;
+    cursor: pointer;
+    border-radius: 30px;
+    color: white;
+}
+
+.center-1-left button:hover, .footer-1-text button:hover, .box-right button:hover , #short-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+li:hover {
+    color: #2acfcf;
+    cursor: pointer;
+}
+
+.social-media i:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.top i {
+    cursor: pointer;
+}
