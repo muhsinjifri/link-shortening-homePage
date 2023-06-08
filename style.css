@@ -366,3 +366,267 @@ li:hover {
 .top i {
     cursor: pointer;
 }
+
+@media (min-width:1000px) {
+
+    .menu-btn {
+        display: none;
+    }
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        /* margin-right: 100px; */
+        margin-left: 9%;
+    }
+    .navigation-bar {
+        background-color: white;
+        padding: 0px;
+        color: black;
+        /* text-align: center; */
+        border-radius: 5px;
+        position: static;
+        /* left: 0px; */
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+        margin-right: 20%;
+    }
+
+    .navigation-bottom, .navigation-top {
+        display: flex;
+        border: none;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .navigation-bottom {
+        justify-content: end;
+    }
+    .navigation-bar h4 {
+        margin-left: 10%;
+        color: #9e9aa7;
+    }
+
+    #signup {
+        background-color: #2acfcf;
+        color: white;
+        width: 100px;
+        padding:10px 0px;
+        border-radius: 30px;
+    }
+
+    .center-1 {
+        margin-top: 150px;
+        display: flex;
+        margin-left: 10%;
+        height: 50vh;
+        margin-bottom: 50px;
+    }
+
+    .center-1-left {
+        order: 1;
+        flex-basis: 55%;
+        text-align: left;
+        margin-bottom: 0px;
+    }
+
+    .center-1-right {
+        order: 2;
+        flex-basis: 45%;
+        /* height: 100%; */
+    }
+
+    .center-1-right img {
+        /* object-fit: cover; */
+        object-position: left;
+    }
+
+    .center-1-left h1 {
+        font-size: 3rem;
+        line-height: 1.1;
+        margin-bottom: 0px;
+    }
+
+    .center-1-left p {
+        font-size: 1.1rem;
+        padding-right: 100px;
+        margin-bottom: 30px;
+    }
+
+    .center-2-top {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+
+    .link-and-button {
+        top: 100px;
+        width: 100%;
+        text-align: center;
+        height: 100%;
+    }
+
+    #myLink {
+        display: flex;
+        height: 100%;
+        margin: 0px 100px;
+        justify-content: space-between;
+    }
+
+    #text-area {
+        flex-basis: 70%;
+        flex-grow: 0;
+        margin-top: 5px;
+    }
+
+    #short-btn {
+        flex-basis: 25%;
+        margin-top: 10px;
+    }
+
+    .link-box-bgimage {
+        height: 100%;
+        width: 100%;
+    }
+
+    .box {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .box-right {
+        border: none;
+        display: flex;
+        flex-basis: 30%;
+        flex-grow: 1;
+        justify-content: end;
+        text-align: end;
+        position: relative;
+        
+    }
+
+    .default-link {
+        flex-grow: 1;
+    }
+
+    .short-link {
+        flex-basis: 120%;
+    }
+    .unik {
+        /* flex-basis: 20%; */
+        max-width: 150px;
+        margin-right: 0px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .center-3-top {
+        padding-left: 25%;
+        padding-right: 25%;
+        width: auto;
+        height: auto;
+    }
+
+    .center-3-top h2 {
+        font-size: 2.2rem;
+        color: #3b3054;
+    }
+
+    .center-3-top p {
+        font-size: 1.3rem;
+        margin-top: 0px;
+    }
+
+    .center-3-bottom {
+        display: flex;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .ppt {
+        width: auto;
+        margin-right: 15px;
+        margin-left: 15px;
+        height: 300px;
+        text-align: left;
+    }
+
+    .ppt-img {
+        left: 5%;
+    }
+
+    .ppt-img .line {
+        display: none;
+    }
+
+    .property-2 {
+        margin-top: 50px;
+    }
+
+    .property-3 {
+        margin-top: 100px;
+    }
+
+    .property-2 .line {
+        background-color: #2acfcf;
+        position: absolute;
+        height: 10px;
+        width: 150%;
+        left: -20%;
+        z-index: -1;
+        top: 100px;
+    }
+
+    .footer-2 {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        /* padding: 0px; */
+    }
+
+    .footer-2-right {
+        display: flex;
+        flex-grow: 0.5;
+        justify-content: space-around;
+        margin-left: 10%;
+    }
+
+    .footlink {
+        flex-grow: 0.33;
+        flex-basis: 33%;
+        width: 200px;
+    }
+
+    ul {
+        padding: 0px;
+        margin-right: 20%;
+    }
+
+    .footlink h4{
+        margin-top: 0px;
+    }
+
+    .footer-2-right, .social-media {
+        margin-top: 60px;
+    }
+
+    .navigation-bar h4:hover {
+        color: black;
+        background: none;
+        cursor: pointer;
+    }
+
+    #signup:hover, .center-1-left button:hover, .footer-1 button:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+    
+}
