@@ -119,3 +119,22 @@ function copyText(unik,short,copybtn) {
     button.style.backgroundColor = "#3b3054"
     
 }
+
+
+function changeImage() {
+    var image1 = document.getElementById("bg1");
+    var image2 = document.getElementById("bg2");
+    var windowWidth = window.innerWidth;
+
+    if (windowWidth >= 1000) {
+        image1.src = "./images/bg-shorten-desktop.svg";
+        image2.src = "./images/bg-boost-desktop.svg";
+    } else {
+        image1.src = "./images/bg-shorten-mobile.svg";
+        image2.src = "./images/bg-boost-mobile.svg";
+    }
+}
+
+window.addEventListener('resize', changeImage);
+
+changeImage();
